@@ -15,14 +15,13 @@ $basepath = '';
 $router->setBasePath($basepath);
 
 try {
-    $pdo = Conexao::novaConexao();
+    // $pdo = Conexao::novaConexao();
 } catch (Exception $e) {
     Erro::trataErro($e);
 }
 
 // chamando a view da rota
 $match = $router->match();
-
 
 if ($match['target'] == 'api') {
     $acao = $match['params']['acao'];
