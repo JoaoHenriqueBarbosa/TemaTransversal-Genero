@@ -1,53 +1,97 @@
-    <!-- Simple header with scrollable tabs. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <div class="mdl-layout__header-row">
-          <!-- Title -->
-          <span class="mdl-layout-title">Title</span>
-          <div class="mdl-layout-spacer"></div>
-	      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
-	                  mdl-textfield--floating-label mdl-textfield--align-right">
-	        <label class="mdl-button mdl-js-button mdl-button--icon"
-	               for="waterfall-exp">
-	          <i class="material-icons">search</i>
-	        </label>
-	        <div class="mdl-textfield__expandable-holder">
-	          <input class="mdl-textfield__input" type="text" name="sample"
-	                 id="waterfall-exp">
-	        </div>
-	      </div>
-        </div>
-        <!-- Tabs -->
-        <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-          <a href="#scroll-tab-1" class="mdl-layout__tab is-active">Tab 1</a>
-          <a href="#scroll-tab-2" class="mdl-layout__tab">Tab 2</a>
-          <a href="#scroll-tab-3" class="mdl-layout__tab">Tab 3</a>
-          <a href="#scroll-tab-4" class="mdl-layout__tab">Tab 4</a>
-          <a href="#scroll-tab-5" class="mdl-layout__tab">Tab 5</a>
-          <a href="#scroll-tab-6" class="mdl-layout__tab">Tab 6</a>
-        </div>
-      </header>
-      <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">Title</span>
-      </div>
-      <main class="mdl-layout__content">
-        <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
-          <div class="page-content"><!-- Your content goes here --></div>
-        </section>
-        <section class="mdl-layout__tab-panel" id="scroll-tab-2">
-          <div class="page-content"><!-- Your content goes here --></div>
-        </section>
-        <section class="mdl-layout__tab-panel" id="scroll-tab-3">
-          <div class="page-content"><!-- Your content goes here --></div>
-        </section>
-        <section class="mdl-layout__tab-panel" id="scroll-tab-4">
-          <div class="page-content"><!-- Your content goes here --></div>
-        </section>
-        <section class="mdl-layout__tab-panel" id="scroll-tab-5">
-          <div class="page-content"><!-- Your content goes here --></div>
-        </section>
-        <section class="mdl-layout__tab-panel" id="scroll-tab-6">
-          <div class="page-content"><!-- Your content goes here --></div>
-        </section>
-      </main>
+<section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+  <div class="page-content">
+    <!-- Depoimentos -->
+    <div class="config mdl-card section--center mdl-grid mdl-grid--no-spacing">
+      <form action="">
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+          <input type="radio" id="option-1" class="mdl-radio__button" name="filtro" value="relevancia">
+          <span class="mdl-radio__label">Relevância</span>
+        </label>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2" style="margin-left: 10px;">
+          <input type="radio" id="option-2" class="mdl-radio__button" name="filtro" value="data">
+          <span class="mdl-radio__label">Data</span>
+        </label>
+        <input type="submit" value="Filtrar" style="margin-left: 10px;" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+        </form>
     </div>
+    <?php for ($i=0; $i < 6; $i++): ?>
+    <div class="janx-card-wide mdl-card section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+      <div class="mdl-card__title">
+        <h1 class="mdl-card__title-text">Depoimento</h1>
+      </div>
+      <div class="mdl-card__subtitle">
+        <p class="datahora">Segunda-Feira, 27 de agosto de 2018</p>
+      </div>
+      <div class="mdl-card__supporting-text">
+        Este é um depoimento, ao lado você pode classificar como mais ou menos relevante.
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+        Compartilhar
+        </a>
+      </div>
+      <div class="mdl-card__menu">
+        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+          <i class="material-icons">arrow_upward</i>
+        </button>
+        <div>152</div>
+        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+          <i class="material-icons">arrow_downward</i>
+        </button>
+      </div>
+    </div>
+    <?php endfor; ?>
+  </div>
+</section>
+<section class="mdl-layout__tab-panel" id="fixed-tab-2">
+  <div class="page-content">
+    <!-- Profissionais -->
+    <div class="config mdl-card section--center mdl-grid mdl-grid--no-spacing">
+      <form action="">
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+          <input type="radio" id="option-1" class="mdl-radio__button" name="filtro" value="relevancia">
+          <span class="mdl-radio__label">Relevância</span>
+        </label>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2" style="margin-left: 10px;">
+          <input type="radio" id="option-2" class="mdl-radio__button" name="filtro" value="data">
+          <span class="mdl-radio__label">Data</span>
+        </label>
+        <input type="submit" value="Filtrar" style="margin-left: 10px;" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+        </form>
+    </div>
+    <?php for ($i=0; $i < 6; $i++): ?>
+    <div class="janx-card-wide mdl-card section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+      <div class="mdl-card__title">
+        <h1 class="mdl-card__title-text">Artigo</h1>
+      </div>
+      <div class="mdl-card__subtitle">
+        <h2 class="mdl-card__subtitle-text">por <a href="">Profissional</a></h2>
+        <p class="datahora">Segunda-Feira, 27 de agosto de 2018</p>
+      </div>
+      <div class="mdl-card__supporting-text">
+        Este é um artigo, ao lado você pode classificar como mais ou menos relevante.
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+        Compartilhar
+        </a>
+      </div>
+      <div class="mdl-card__menu">
+        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+          <i class="material-icons">arrow_upward</i>
+        </button>
+        <div>152</div>
+        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+          <i class="material-icons">arrow_downward</i>
+        </button>
+      </div>
+    </div>
+    <?php endfor; ?>
+  </div>
+</section>
+<section class="mdl-layout__tab-panel" id="fixed-tab-3">
+  <div class="page-content">
+  <!-- Explore -->
+
+  </div>
+</section>

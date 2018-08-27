@@ -1,4 +1,6 @@
 <?php
+require __DIR__.'/app/config.php';
+
 ob_start();
 
 setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
@@ -21,16 +23,19 @@ try {
 }
 
 // chamando a view da rota
+$home = false;
 $match = $router->match();
-
 if ($match['target'] == 'api') {
     $acao = $match['params']['acao'];
     require_once(__DIR__.'/REST/api.php');
 } else {
+    if ($match['target'] == 'home'){
+        $home = true;
+    }
     $caminhoView = __DIR__.'/views/'.$match['target'].'.php';
     require_once(__DIR__.'/app/header.php');
     if (!file_exists($caminhoView))
-      echo 'erro 404';
+    require_once(__DIR__.'/views/404.php'); 
     else
       require_once($caminhoView); 
     require_once(__DIR__.'/app/footer.php');
