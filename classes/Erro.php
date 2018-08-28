@@ -13,4 +13,14 @@ class Erro
         }
         exit;
     }
+
+    public static function dumpVariavel($variavel)
+    {
+        if (DEBUG) {
+            echo '<pre>';
+            var_dump($e);
+            echo '</pre>';
+        }
+        exit;
+    }
 }
