@@ -113,6 +113,30 @@
 <section class="mdl-layout__tab-panel" id="fixed-tab-3">
   <div class="page-content">
   <!-- Explore -->
-
+  <div class="mdl-cell mdl-cell--6-col infocus-img-card mdl-cell--4-col-tablet mdl-cell--12-col-mobile">
+          
+            
+          <div class=" rw-card rw-card--media rw-card--media-full mdl-card mdl-shadow--2dp">
+            <div class="rw-card__img-container bg-img-clickable" data-img="//lh3.googleusercontent.com/H-OFG3TFG4VaLZArWdzlCfU-6FHu7F03YJ5nAriNzvw7rUdpwYMroxfGnJ7gMaybwVKVm0tUjCN6OnH-ubX1rMg=w1614" alt="Great managers still matter: the evolution of Google’s Project Oxygen" data-href="/blog/the-evolution-of-project-oxygen/" style="background-image: url(&quot;//lh3.googleusercontent.com/H-OFG3TFG4VaLZArWdzlCfU-6FHu7F03YJ5nAriNzvw7rUdpwYMroxfGnJ7gMaybwVKVm0tUjCN6OnH-ubX1rMg=w1614&quot;);">
+            </div>
+            <div class="rw-card__content">
+              <h2 class="rw-card__title">
+                <a href="/blog/the-evolution-of-project-oxygen/">Great managers still matter: the evolution of Google’s Project Oxygen</a>
+              </h2>
+              <div class="rw-card__body">
+                <a href="/blog/the-evolution-of-project-oxygen/">
+                  Google has learned more about managers since the original Project Oxygen research study in 2008. As the company has grown, we found that Googlers r...
+                </a>
+              </div>
+              <div class="rw-card__actions">
+                <span class="rw-card__meta rw-card__meta--blogpost">
+                  <i class="material-icons">create</i> Blog
+                </span>
+              </div>
+            </div>
+          </div>
+          
+                    
+                  </div>
   </div>
 </section>
